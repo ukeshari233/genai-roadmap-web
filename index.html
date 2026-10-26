@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GenAI Roadmap Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Bar & Header -->
+    <header class="app-header">
+      <div class="top-bar">
+        <div class="brand-badge">
+          <span class="brand-dot"></span>
+          <span>GenAI Engineering Tracker</span>
+        </div>
+        <div class="header-actions">
+          <button id="toggle-all-btn" class="header-btn" title="Toggle expanding all months">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="7 13 12 18 17 13"></polyline>
+              <polyline points="7 6 12 11 17 6"></polyline>
+            </svg>
+            <span id="toggle-all-text">Collapse All</span>
+          </button>
+          <button id="reset-btn" class="header-btn danger-btn" title="Reset all progress">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+              <path d="M3 3v5h5"></path>
+            </svg>
+            <span>Reset Progress</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="title-section">
+        <h1>My GenAI Roadmap</h1>
+        <p class="subtitle">Learn consistently, one week at a time.</p>
+      </div>
+
+      <!-- Dashboard Summary Cards (4 Cards) -->
+      <div class="summary-grid">
+        <div class="summary-card">
+          <span class="card-label">Overall Progress</span>
+          <span class="card-value" id="stat-overall-pct">0%</span>
+          <span class="card-subtext" id="stat-overall-subtext">0 of 40 topics</span>
+        </div>
+        <div class="summary-card">
+          <span class="card-label">Topics Completed</span>
+          <span class="card-value" id="stat-completed-count">0</span>
+          <span class="card-subtext" id="stat-completed-subtext">Across 20 weeks</span>
+        </div>
+        <div class="summary-card">
+          <span class="card-label">Topics Remaining</span>
+          <span class="card-value" id="stat-remaining-count">40</span>
+          <span class="card-subtext" id="stat-remaining-subtext">To master GenAI</span>
+        </div>
+        <div class="summary-card">
+          <span class="card-label">Current Active Week</span>
+          <span class="card-value" id="stat-active-week">Week 1</span>
+          <span class="card-subtext" id="stat-active-week-title">Python Foundations</span>
+        </div>
+      </div>
+
+      <!-- Overall Progress Bar -->
+      <div class="overall-progress-container">
+        <div class="progress-header">
+          <span class="progress-title">Curriculum Completion</span>
+          <span class="progress-stats">
+            <span id="bar-pct-text">0%</span>
+            <span class="sub-stat" id="bar-detail-text">(0 / 40 completed)</span>
+          </span>
+        </div>
+        <div class="progress-bar-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar-fill" id="main-progress-bar"></div>
+        </div>
+      </div>
+
+      <!-- Five-Month Roadmap Overview -->
+      <div class="month-overview-section">
+        <div class="section-label">Five-Month Roadmap Overview</div>
+        <div class="month-strip" id="month-strip-container">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <!-- Current Week Focus & Continue Learning Banner -->
+      <div class="focus-card" id="focus-banner">
+        <div class="focus-content">
+          <div class="focus-badge" id="focus-badge">Current Target • Week 1</div>
+          <h2 class="focus-title" id="focus-week-title">Python Foundations & Core Syntax</h2>
+          <p class="focus-desc" id="focus-next-topic">
+            Next topic: <strong>Development setup (Python, VS Code), execution basics, debugging</strong>
+          </p>
+        </div>
+        <button id="continue-learning-btn" class="continue-btn" type="button">
+          <span>Continue Learning</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Search & Filters -->
+      <div class="controls-container">
+        <div class="search-wrapper">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Search topics, tools, or projects (e.g. LangChain, RAG, MCP, Docker)..."
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <button id="search-clear-btn" class="search-clear-btn" title="Clear search" aria-label="Clear search">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="filter-group" role="radiogroup" aria-label="Filter topics">
+          <button class="filter-btn active" data-filter="all" role="radio" aria-checked="true">All topics</button>
+          <button class="filter-btn" data-filter="completed" role="radio" aria-checked="false">Completed</button>
+          <button class="filter-btn" data-filter="incomplete" role="radio" aria-checked="false">Incomplete</button>
+        </div>
+      </div>
+
+      <!-- Filter/Search Results Counter -->
+      <div class="results-info-bar" id="results-info-bar" style="display: none;">
+        <span id="results-count-text">Showing matches</span>
+        <button id="reset-filter-btn" type="button">Reset filters</button>
+      </div>
+    </header>
+
+    <!-- Main Content: Roadmap Tree -->
+    <main>
+      <div class="roadmap-tree" id="roadmap-tree">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+      <div class="empty-state" id="empty-state" style="display: none;">
+        <h3>No matching topics found</h3>
+        <p>Try refining your search keyword or switching your filter status.</p>
+        <button id="empty-reset-btn" class="empty-state-btn" type="button">Show all topics</button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-left">
+        <span>Personal GenAI Engineering Roadmap • 20 Weeks Master Curriculum</span>
+      </div>
+      <div class="footer-quote">
+        "Learn consistently, one week at a time."
+      </div>
+    </footer>
+  </div>
+
+  <!-- Reset Confirmation Modal Dialog -->
+  <div class="modal-backdrop" id="reset-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <h3 class="modal-title" id="modal-title">Reset Roadmap Progress?</h3>
+      <p class="modal-body">
+        This will uncheck all your completed topics and reset your progress back to 0%. This action cannot be undone.
+      </p>
+      <div class="modal-option-row">
+        <label class="custom-checkbox-wrapper">
+          <input type="checkbox" id="modal-clear-notes">
+          <span class="checkbox-box">
+            <svg class="check-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+        </label>
+        <label for="modal-clear-notes" style="cursor: pointer;">Also clear all personal notes</label>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn-secondary" id="cancel-reset-btn">Cancel</button>
+        <button type="button" class="btn-danger" id="confirm-reset-btn">Reset Everything</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+[
+  {
+    "monthNumber": 1,
+    "monthTitle": "Month 1 — Python Mastery & Applied Foundations",
+    "weeks": [
+      {
+        "weekNumber": 1,
+        "weekTitle": "Python Foundations & Core Syntax",
+        "phase": "Month 1",
+        "keyOutcome": "Gain fluency in Python setup, core syntax, string manipulation, and environment debugging. Build a Student Info System using f-strings.",
+        "project": "Build a Student Info System using f-strings",
+        "topics": [
+          {
+            "id": "w1_t1",
+            "title": "Development setup (Python, VS Code), execution basics, debugging",
+            "subtopics": [
+              { "id": "w1_t1_s1", "title": "Development setup (Python, VS Code)" },
+              { "id": "w1_t1_s2", "title": "Execution basics, debugging" }
+            ]
+          },
+          {
+            "id": "w1_t2",
+            "title": "Data types, variables, operators, strings, f-strings, docstrings",
+            "subtopics": [
+              { "id": "w1_t2_s1", "title": "Data types, variables, operators" },
+              { "id": "w1_t2_s2", "title": "Strings, f-strings, docstrings" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 2,
+        "weekTitle": "Control Flow & Data Structures",
+        "phase": "Month 1",
+        "keyOutcome": "Master data structures and functional design patterns. Build a Student Record Management System with dictionaries and functions.",
+        "project": "Build a Student Record Management System with dictionaries and functions",
+        "topics": [
+          {
+            "id": "w2_t1",
+            "title": "Data collections (Lists, Tuples, Dictionaries, Sets)",
+            "subtopics": [
+              { "id": "w2_t1_s1", "title": "Lists, Tuples, Dictionaries, Sets" },
+              { "id": "w2_t1_s2", "title": "Data collection operations & methods" }
+            ]
+          },
+          {
+            "id": "w2_t2",
+            "title": "Control flow (Loops, Conditionals), functions, recursion, lambda, enumerate",
+            "subtopics": [
+              { "id": "w2_t2_s1", "title": "Control flow (Loops, Conditionals)" },
+              { "id": "w2_t2_s2", "title": "Functions, recursion, lambda, enumerate" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 3,
+        "weekTitle": "Production Python & Modular Project Structure",
+        "phase": "Month 1",
+        "keyOutcome": "Develop production-grade error handling and clean code structure. Build a modular File-Based Expense Tracker.",
+        "project": "Build a modular File-Based Expense Tracker",
+        "topics": [
+          {
+            "id": "w3_t1",
+            "title": "Exception handling, custom errors, file I/O operations",
+            "subtopics": [
+              { "id": "w3_t1_s1", "title": "Exception handling & custom errors" },
+              { "id": "w3_t1_s2", "title": "File I/O operations" }
+            ]
+          },
+          {
+            "id": "w3_t2",
+            "title": "Virtual environments (venv), pip, modules, multithreading, modular code organization",
+            "subtopics": [
+              { "id": "w3_t2_s1", "title": "Virtual environments (venv), pip & modules" },
+              { "id": "w3_t2_s2", "title": "Multithreading & modular code organization" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 4,
+        "weekTitle": "OOP & Applied Python for AI",
+        "phase": "Month 1",
+        "keyOutcome": "Understand OOP principles and data handling tools for AI apps. Build an interactive AI Utility Dashboard with Streamlit, Pandas, & NumPy.",
+        "project": "Build an interactive AI Utility Dashboard with Streamlit, Pandas, & NumPy",
+        "topics": [
+          {
+            "id": "w4_t1",
+            "title": "Object-Oriented Programming (Classes, OOP methods, Encapsulation, Inheritance)",
+            "subtopics": [
+              { "id": "w4_t1_s1", "title": "Classes & OOP methods" },
+              { "id": "w4_t1_s2", "title": "Encapsulation & Inheritance" }
+            ]
+          },
+          {
+            "id": "w4_t2",
+            "title": "Applied AI Libraries: Streamlit, Pandas, NumPy crash courses",
+            "subtopics": [
+              { "id": "w4_t2_s1", "title": "Pandas & NumPy crash course" },
+              { "id": "w4_t2_s2", "title": "Streamlit crash course for AI apps" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "monthNumber": 2,
+    "monthTitle": "Month 2 — AI & LLM Foundations to LangChain",
+    "weeks": [
+      {
+        "weekNumber": 5,
+        "weekTitle": "Phase 1: AI & LLM Foundations",
+        "phase": "Phase 1",
+        "keyOutcome": "Understand the LLM technology stack, tokenization mechanics, and repo setup for AI development.",
+        "project": "Repository setup & LLM technology stack experimentation",
+        "topics": [
+          {
+            "id": "w5_t1",
+            "title": "AI vs ML vs DL vs GenAI, LLM evolution, AI Engineer roadmap",
+            "subtopics": [
+              { "id": "w5_t1_s1", "title": "AI vs ML vs DL vs GenAI differences" },
+              { "id": "w5_t1_s2", "title": "LLM evolution & AI Engineer roadmap" }
+            ]
+          },
+          {
+            "id": "w5_t2",
+            "title": "Tokenization, context windows, embeddings, popular LLMs, Git/GitHub setup",
+            "subtopics": [
+              { "id": "w5_t2_s1", "title": "Tokenization, context windows, embeddings" },
+              { "id": "w5_t2_s2", "title": "Popular LLMs overview & Git/GitHub setup" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 6,
+        "weekTitle": "Phase 1: Transformer Architecture & Responsible AI",
+        "phase": "Phase 1",
+        "keyOutcome": "Grasp deep intuition of Attention mechanism and construct safety/eval frameworks for hallucinations and prompt injections.",
+        "project": "Safety/eval frameworks for hallucinations and prompt injections",
+        "topics": [
+          {
+            "id": "w6_t1",
+            "title": "Transformer architecture intuition, Attention mechanism, Inference vs Training",
+            "subtopics": [
+              { "id": "w6_t1_s1", "title": "Transformer architecture intuition & Attention mechanism" },
+              { "id": "w6_t1_s2", "title": "Inference vs Training" }
+            ]
+          },
+          {
+            "id": "w6_t2",
+            "title": "Responsible AI, LLM safety, prompt injection, guardrails, hallucinations, privacy",
+            "subtopics": [
+              { "id": "w6_t2_s1", "title": "Responsible AI, LLM safety & prompt injection" },
+              { "id": "w6_t2_s2", "title": "Guardrails, hallucinations & privacy" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 7,
+        "weekTitle": "Phase 2: Working with LLMs & Multi-Model APIs",
+        "phase": "Phase 2",
+        "keyOutcome": "Master cloud & local LLM integration via APIs. Build a Multi-Model AI Playground supporting OpenAI, Gemini, and Ollama.",
+        "project": "Build a Multi-Model AI Playground supporting OpenAI, Gemini, and Ollama",
+        "topics": [
+          {
+            "id": "w7_t1",
+            "title": "SDKs: OpenAI, Gemini API, Hugging Face, local Ollama setup",
+            "subtopics": [
+              { "id": "w7_t1_s1", "title": "Cloud SDKs: OpenAI, Gemini API, Hugging Face" },
+              { "id": "w7_t1_s2", "title": "Local Ollama setup & model execution" }
+            ]
+          },
+          {
+            "id": "w7_t2",
+            "title": "Model parameters (Temperature, Top P), streaming, structured outputs, function calling",
+            "subtopics": [
+              { "id": "w7_t2_s1", "title": "Model parameters (Temperature, Top P) & streaming" },
+              { "id": "w7_t2_s2", "title": "Structured outputs & function calling" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 8,
+        "weekTitle": "Phase 3: AI Application Development with LangChain (Part 1)",
+        "phase": "Phase 3",
+        "keyOutcome": "Build structured, chainable LLM workflows using LCEL. Construct an automated AI Resume Reviewer.",
+        "project": "Construct an automated AI Resume Reviewer",
+        "topics": [
+          {
+            "id": "w8_t1",
+            "title": "LangChain core architecture, Chat Models, Prompt Engineering & Templates",
+            "subtopics": [
+              { "id": "w8_t1_s1", "title": "LangChain core architecture & Chat Models" },
+              { "id": "w8_t1_s2", "title": "Prompt Engineering & Templates" }
+            ]
+          },
+          {
+            "id": "w8_t2",
+            "title": "Output Parsers, LCEL (LangChain Expression Language), Runnables, Chains",
+            "subtopics": [
+              { "id": "w8_t2_s1", "title": "Output Parsers" },
+              { "id": "w8_t2_s2", "title": "LCEL (LangChain Expression Language), Runnables, Chains" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "monthNumber": 3,
+    "monthTitle": "Month 3 — LangChain Stateful Systems, RAG & LangGraph",
+    "weeks": [
+      {
+        "weekNumber": 9,
+        "weekTitle": "Phase 3: AI Application Development with LangChain (Part 2)",
+        "phase": "Phase 3",
+        "keyOutcome": "Manage stateful multi-turn conversational agents and document ingestion. Build a Multi-Session AI Chatbot with Memory.",
+        "project": "Build a Multi-Session AI Chatbot with Memory",
+        "topics": [
+          {
+            "id": "w9_t1",
+            "title": "Memory management, Chat History, session handling",
+            "subtopics": [
+              { "id": "w9_t1_s1", "title": "Memory management & Chat History" },
+              { "id": "w9_t1_s2", "title": "Session handling" }
+            ]
+          },
+          {
+            "id": "w9_t2",
+            "title": "Document Loaders, Text Splitters, Embeddings, introduction to Vector DBs",
+            "subtopics": [
+              { "id": "w9_t2_s1", "title": "Document Loaders & Text Splitters" },
+              { "id": "w9_t2_s2", "title": "Embeddings & introduction to Vector DBs" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 10,
+        "weekTitle": "Phase 4: Retrieval Augmented Generation (RAG) Foundations",
+        "phase": "Phase 4",
+        "keyOutcome": "Implement end-to-end vector retrieval pipelines over custom documents. Build a PDF Question Answering Chatbot.",
+        "project": "Build a PDF Question Answering Chatbot",
+        "topics": [
+          {
+            "id": "w10_t1",
+            "title": "RAG Architecture: Indexing & Retrieval pipelines, chunking strategies",
+            "subtopics": [
+              { "id": "w10_t1_s1", "title": "RAG Architecture: Indexing & Retrieval pipelines" },
+              { "id": "w10_t1_s2", "title": "Chunking strategies" }
+            ]
+          },
+          {
+            "id": "w10_t2",
+            "title": "Embedding models, FAISS, ChromaDB, metadata filtering, similarity search",
+            "subtopics": [
+              { "id": "w10_t2_s1", "title": "Embedding models, FAISS & ChromaDB" },
+              { "id": "w10_t2_s2", "title": "Metadata filtering & similarity search" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 11,
+        "weekTitle": "Phase 4: Advanced RAG Techniques",
+        "phase": "Phase 4",
+        "keyOutcome": "Optimize RAG accuracy, context efficiency, and search relevance. Upgrade QA chatbot with advanced retrieval strategies.",
+        "project": "Upgrade QA chatbot with advanced retrieval strategies",
+        "topics": [
+          {
+            "id": "w11_t1",
+            "title": "Hybrid Search, Multi-Query Retrieval, Query Transformation",
+            "subtopics": [
+              { "id": "w11_t1_s1", "title": "Hybrid Search" },
+              { "id": "w11_t1_s2", "title": "Multi-Query Retrieval & Query Transformation" }
+            ]
+          },
+          {
+            "id": "w11_t2",
+            "title": "Parent Document Retrieval, Re-ranking, Context Compression, Vectorless Retrieval",
+            "subtopics": [
+              { "id": "w11_t2_s1", "title": "Parent Document Retrieval & Re-ranking" },
+              { "id": "w11_t2_s2", "title": "Context Compression & Vectorless Retrieval" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 12,
+        "weekTitle": "Phase 5: Agentic AI with LangGraph (Part 1)",
+        "phase": "Phase 5",
+        "keyOutcome": "Design graph-based stateful AI agent workflows. Build an autonomous Research Assistant with LangGraph.",
+        "project": "Build an autonomous Research Assistant with LangGraph",
+        "topics": [
+          {
+            "id": "w12_t1",
+            "title": "Introduction to AI Agents, Agent architectures, LangGraph fundamentals (Nodes, Edges, State)",
+            "subtopics": [
+              { "id": "w12_t1_s1", "title": "Introduction to AI Agents & Agent architectures" },
+              { "id": "w12_t1_s2", "title": "LangGraph fundamentals (Nodes, Edges, State)" }
+            ]
+          },
+          {
+            "id": "w12_t2",
+            "title": "Workflow patterns: Sequential, Conditional, Parallel, and Iterative workflows",
+            "subtopics": [
+              { "id": "w12_t2_s1", "title": "Sequential & Conditional workflow patterns" },
+              { "id": "w12_t2_s2", "title": "Parallel & Iterative workflow patterns" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "monthNumber": 4,
+    "monthTitle": "Month 4 — Advanced Agents, Model Context Protocol & LLMOps",
+    "weeks": [
+      {
+        "weekNumber": 13,
+        "weekTitle": "Phase 5: Advanced Agentic AI & Multi-Agent Collaboration",
+        "phase": "Phase 5",
+        "keyOutcome": "Develop sophisticated multi-agent systems with human oversight and tool interaction. Build a Multi-Agent Research Assistant.",
+        "project": "Build a Multi-Agent Research Assistant",
+        "topics": [
+          {
+            "id": "w13_t1",
+            "title": "Tool calling, Human-in-the-loop, agent memory",
+            "subtopics": [
+              { "id": "w13_t1_s1", "title": "Tool calling & Human-in-the-loop" },
+              { "id": "w13_t1_s2", "title": "Agent memory" }
+            ]
+          },
+          {
+            "id": "w13_t2",
+            "title": "Multi-agent architecture, collaboration patterns, planning agents, reflection loops",
+            "subtopics": [
+              { "id": "w13_t2_s1", "title": "Multi-agent architecture & collaboration patterns" },
+              { "id": "w13_t2_s2", "title": "Planning agents & reflection loops" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 14,
+        "weekTitle": "Phase 6: Model Context Protocol (MCP) Foundations",
+        "phase": "Phase 6",
+        "keyOutcome": "Standardize tool and context integration across LLMs. Build a custom MCP Server exposing internal business APIs.",
+        "project": "Build a custom MCP Server exposing internal business APIs",
+        "topics": [
+          {
+            "id": "w14_t1",
+            "title": "MCP Architecture & Lifecycle (Clients, Servers, Resources)",
+            "subtopics": [
+              { "id": "w14_t1_s1", "title": "MCP Architecture & Lifecycle" },
+              { "id": "w14_t1_s2", "title": "MCP Clients, Servers & Resources" }
+            ]
+          },
+          {
+            "id": "w14_t2",
+            "title": "Building custom MCP servers, MCP tools, AI tool integration, local MCP development",
+            "subtopics": [
+              { "id": "w14_t2_s1", "title": "Building custom MCP servers & MCP tools" },
+              { "id": "w14_t2_s2", "title": "AI tool integration & local MCP development" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 15,
+        "weekTitle": "Phase 6: MCP Integration with LangGraph",
+        "phase": "Phase 6",
+        "keyOutcome": "Orchestrate complex agent workflows powered by standardized MCP tools. Build an Enterprise Agent using multi-MCP tools.",
+        "project": "Build an Enterprise Agent using multi-MCP tools",
+        "topics": [
+          {
+            "id": "w15_t1",
+            "title": "LangGraph + MCP integration, dynamic tool orchestration",
+            "subtopics": [
+              { "id": "w15_t1_s1", "title": "LangGraph + MCP integration" },
+              { "id": "w15_t1_s2", "title": "Dynamic tool orchestration" }
+            ]
+          },
+          {
+            "id": "w15_t2",
+            "title": "End-to-end Agent + MCP applications, security best practices, access control",
+            "subtopics": [
+              { "id": "w15_t2_s1", "title": "End-to-end Agent + MCP applications" },
+              { "id": "w15_t2_s2", "title": "Security best practices & access control" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 16,
+        "weekTitle": "Phase 7: LLMOps, Tracing & Evaluation",
+        "phase": "Phase 7",
+        "keyOutcome": "Implement production observability, automated metrics evaluation, and cost/latency benchmarking for AI applications.",
+        "project": "Implement production observability and automated evaluation",
+        "topics": [
+          {
+            "id": "w16_t1",
+            "title": "Prompt versioning, logging, tracing with LangSmith & LangFuse",
+            "subtopics": [
+              { "id": "w16_t1_s1", "title": "Prompt versioning & logging" },
+              { "id": "w16_t1_s2", "title": "Tracing with LangSmith & LangFuse" }
+            ]
+          },
+          {
+            "id": "w16_t2",
+            "title": "LLM & RAG evaluation (DeepEval, RAGAS), latency/cost optimization, caching",
+            "subtopics": [
+              { "id": "w16_t2_s1", "title": "LLM & RAG evaluation (DeepEval, RAGAS)" },
+              { "id": "w16_t2_s2", "title": "Latency/cost optimization & caching" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "monthNumber": 5,
+    "monthTitle": "Month 5 — Cloud Deployment, Production Portfolio & Career Readiness",
+    "weeks": [
+      {
+        "weekNumber": 17,
+        "weekTitle": "Phase 7: Microservices & Cloud Deployment",
+        "phase": "Phase 7",
+        "keyOutcome": "Containerize and deploy scalable AI microservices to cloud infrastructure (AWS EC2) with automated pipelines.",
+        "project": "Containerize and deploy scalable AI microservices to cloud infrastructure (AWS EC2)",
+        "topics": [
+          {
+            "id": "w17_t1",
+            "title": "REST APIs with FastAPI, Docker containerization, Docker Compose",
+            "subtopics": [
+              { "id": "w17_t1_s1", "title": "REST APIs with FastAPI" },
+              { "id": "w17_t1_s2", "title": "Docker containerization & Docker Compose" }
+            ]
+          },
+          {
+            "id": "w17_t2",
+            "title": "AWS EC2 deployment, production environments, CI/CD fundamentals",
+            "subtopics": [
+              { "id": "w17_t2_s1", "title": "AWS EC2 deployment" },
+              { "id": "w17_t2_s2", "title": "Production environments & CI/CD fundamentals" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 18,
+        "weekTitle": "Phase 8: Production Portfolio Project - Architecture & Core Sprint",
+        "phase": "Phase 8",
+        "keyOutcome": "Formulate system design and implement the foundation of a production-grade Capstone AI project.",
+        "project": "Implement foundation of a production-grade Capstone AI project",
+        "topics": [
+          {
+            "id": "w18_t1",
+            "title": "Project planning, system design, requirements analysis",
+            "subtopics": [
+              { "id": "w18_t1_s1", "title": "Project planning & system design" },
+              { "id": "w18_t1_s2", "title": "Requirements analysis" }
+            ]
+          },
+          {
+            "id": "w18_t2",
+            "title": "Core architecture implementation, mentor code reviews, milestone evaluation",
+            "subtopics": [
+              { "id": "w18_t2_s1", "title": "Core architecture implementation" },
+              { "id": "w18_t2_s2", "title": "Mentor code reviews & milestone evaluation" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 19,
+        "weekTitle": "Phase 8: Production Portfolio Project - Refinement & Cloud Deployment",
+        "phase": "Phase 8",
+        "keyOutcome": "Deploy the fully functional, monitored end-to-end production AI application to live cloud servers.",
+        "project": "Deploy the fully functional, monitored end-to-end production AI application to live cloud servers",
+        "topics": [
+          {
+            "id": "w19_t1",
+            "title": "Advanced feature implementation, integration testing, system debugging",
+            "subtopics": [
+              { "id": "w19_t1_s1", "title": "Advanced feature implementation" },
+              { "id": "w19_t1_s2", "title": "Integration testing & system debugging" }
+            ]
+          },
+          {
+            "id": "w19_t2",
+            "title": "Production deployment, cloud observability, technical documentation",
+            "subtopics": [
+              { "id": "w19_t2_s1", "title": "Production deployment" },
+              { "id": "w19_t2_s2", "title": "Cloud observability & technical documentation" }
+            ]
+          }
+        ]
+      },
+      {
+        "weekNumber": 20,
+        "weekTitle": "Phase 8: Program Wrap-Up, Portfolio & Career Readiness",
+        "phase": "Phase 8",
+        "keyOutcome": "Complete live project portfolio (GitHub, Live Demo, Docs), refine AI resume, and master technical interview readiness.",
+        "project": "Complete live project portfolio (GitHub, Live Demo, Docs), refine AI resume, and master technical interview readiness",
+        "topics": [
+          {
+            "id": "w20_t1",
+            "title": "Capstone presentations, peer code reviews, technical feedback",
+            "subtopics": [
+              { "id": "w20_t1_s1", "title": "Capstone presentations & peer code reviews" },
+              { "id": "w20_t1_s2", "title": "Technical feedback implementation" }
+            ]
+          },
+          {
+            "id": "w20_t2",
+            "title": "Portfolio polishing (GitHub, Live Demos), Resume building, AI interview prep & mock interviews",
+            "subtopics": [
+              { "id": "w20_t2_s1", "title": "Portfolio polishing (GitHub, Live Demos) & Resume building" },
+              { "id": "w20_t2_s2", "title": "AI interview prep & mock interviews" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
